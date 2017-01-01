@@ -1,0 +1,145 @@
+h1, h2, h3 {
+	margin: 0em;
+	}
+
+ul, ol {
+	margin-top: 0em;
+	}
+
+.mainButtons fieldset {
+	float: left;
+	}
+
+#truthTable {
+	}
+	
+#truthTable table {
+	border-collapse: collapse;
+	}
+	
+#truthTable th, #truthTable td {
+	border: solid 1px #98BF21;
+	text-align: center;
+	padding: 0px 2px;
+	}
+	
+#truthTable th {
+	background-color: #A7C942;
+	color: white;
+	}
+	
+#truthTable  .truthTableInputHeader, #truthTable .truthTableOuputHeader {
+	background-color: #EAF2D3;
+	color: black;
+	font-size: 1em;
+	font-family: monospace;
+	}
+
+#truthTable td {
+	font-family: monospace;
+	}
+	
+#truthTable .firstTruthTableOutput {
+	border-left: solid 3px #98BF21;
+	}
+	
+#truthTable .truthTableInput {
+	}
+	
+#truthTable .truthTableOutput {
+	}
+	
+#instructions {
+	float: left;
+	}
+	
+#gateArea {
+	}
+	
+.canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	}
+
+.wireNode {
+	background: #000;
+	border: solid 4px #000;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 40px;
+	left: 200px;
+	}
+	
+.wireNodetrue {
+	background: #ff0;
+	}
+	
+.wireNodefalse {
+	background: #660;
+	}
+	
+.logicGate {
+	width: 100px;
+	height: 100px;
+	border: solid 1px #000;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	}
+
+.INPUTgate {
+	background: #999;
+	}
+	
+.OUTPUTgate {
+	background: #999;
+	}
+	
+.TRUEgate {
+	background: #3c3;
+	}
+	
+.FALSEgate {
+	background: #c33;
+	}
+	
+.NOTgate {
+	background: #f90;
+	}	
+	
+.ORgate {
+	background: #3cc
+	}
+	
+.ANDgate {
+	background: #d3d;
+	}
+	
+.logicGate .gateText {
+	position: absolute;
+	top: 25%;
+	height: 20px;
+	width: 100%;
+	margin-top: -10px;
+	}
+	
+.logicGate .gateDivider {
+	position: absolute;
+	left: 50%;
+	height: 98%;
+	width: 0px;
+	border: dotted 1px #000;
+	}
+
+.logicGate .outputArea {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	}

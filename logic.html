@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Logic Gates</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="main.css" />
+	
+	<script src="Common.js" type="text/javascript"></script>
+	<script src="Vector.js" type="text/javascript"></script>
+	<script src="Rectangle.js" type="text/javascript"></script>
+	
+	<script src="main.js" type="text/javascript"></script>
+	
+	<script src="LogicGate.js" type="text/javascript"></script>
+	<script src="GateType.js" type="text/javascript"></script>
+	<script src="Wire.js" type="text/javascript"></script>
+	<script src="WireNode.js" type="text/javascript"></script>
+	<script src="CompoundGate.js" type="text/javascript"></script>
+	
+	<script src="wz_dragdrop.js" type="text/javascript"></script>
+	<script src="wz_jsgraphics.js" type="text/javascript"></script>
+</head>
+<body onload="onLoad();">
+	<div id="instructions">
+		<h2>Instructions</h2>
+		<ul>
+			<li>Drag a gate to move it.</li>
+			<li>Shift drag a gate to resize it.</li>
+			<li>Move a wire-node onto a gates input/output to attach it.</li>
+		</ul>
+	</div>
+	
+	<div class="mainButtons">
+		<fieldset>
+			<legend>Add Components</legend>
+			
+			<input type="button" value="TRUE" onclick="main.createAndAddGate(GateType.TRUE)" />
+			<input type="button" value="FALSE" onclick="main.createAndAddGate(GateType.FALSE)" />
+			
+			<br />
+			<input type="button" value="NOT" onclick="main.createAndAddGate(GateType.NOT)" />
+			<input type="button" value="OR" onclick="main.createAndAddGate(GateType.OR)" />
+			<input type="button" value="AND" onclick="main.createAndAddGate(GateType.AND)" />
+			
+			<br />
+			<input type="button" value="Wire" onclick="main.createAndAddWire()" />
+			
+			<br />
+			<input type="button" value="Input" onclick="main.createAndAddInputGate()" />
+			<input type="button" value="Output" onclick="main.createAndAddOutputGate()" />
+		</fieldset>
+		
+		<fieldset>
+			<legend>Truth Table</legend>
+			<input type="button" value="Generate Truth Table" onclick="main.generateTruthTable()" />
+			
+			<br />
+			<div id="truthTable" />
+		</fieldset>
+	</div>
+	
+	<div id="gateArea"></div>
+	<div id="dummy"></div>
+	
+	<script type="text/javascript">
+		SET_DHTML(CURSOR_MOVE, 'dummy');
+	</script>
+</body>
+</html>
